@@ -2,8 +2,8 @@
 @import url('https://zuzumi-f.github.io/Discord-11/release/valuesofdiscord.css');
 /* Fluent Icons */
 @import url('https://discordstyles.github.io/Fluent/Icons.css');
+@import url('https://zuzumi-f.github.io/Discord-11/release/font/windows11font.css');
 
-Discord11
 
 /* Color fix */
 #app-mount .container-3wLKDe /* Forums */,
@@ -48,7 +48,7 @@ Discord11
     display: none;
 }
 .wordmarkWindows-2dq6rw::after {
-    content: "Discord 11";
+    content: "";
     font-family: var(--font-display);
     width: 70px;
     height: 14px;
@@ -3420,4 +3420,4 @@ div[class="container-1-ERn5 clickable-vvKY2q hasBanner-2IrYih bannerVisible-Vkyg
 }
 .theme-light [id="Discord 11-card"]::before {
     background: url(https://github.com/zuzumi-f/Discord-11/blob/main/release/wallpapers/WindowsLight.jpg?raw=true) center/cover;
-}
+}=

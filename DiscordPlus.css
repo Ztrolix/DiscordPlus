@@ -1,29 +1,16 @@
-/**
- * @name Discord+
- * @author PlusInsta & Ztrolix
- * @authorId 309931975102300160
- * @authorLink https://plusinsta.xyz
- * @version 3.2.1
- * @description A sleek, customizable Discord theme.
- * @donate https://ko-fi.com/plusinsta
- * @website https://plusinsta.github.io/discord-plus
- * @source https://github.com/PlusInsta/discord-plus
- * @updateUrl https://plusinsta.github.io/discord-plus/DiscordPlus.theme.css
- * @invite 2Jwh2nS
-*/
 @import url("https://plusinsta.github.io/discord-plus/src/DiscordPlus-source.theme.css");
 @import url("https://xcruxiex.github.io/themes/themes-cores/neutron8.css");
 @import url("https://xcruxiex.github.io/themes/core/badges.css");
 @import url("https://xcruxiex.github.io/themes/core/custom-font.css");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://refact0r.github.io/midnight-discord/midnight.css');
-@import url('https://zuzumi-f.github.io/Discord-11/base.css');
-@import url('https://zuzumi-f.github.io/Discord-11/release/font/windows11font.css');
+@import url('https://github.com/Ztrolix/DiscordPlus/raw/main/midnight.css');
+@import "https://nyri4.github.io/Discolored/main.css";
+@import url("https://nyri4.github.io/donators/donators.css");
+/*@import url('https://github.com/Ztrolix/DiscordPlus/raw/main/win11base.css');
 
 /* I've commented most of these values so you can change them yourself. If you're having trouble, or you want to do more than what these values allow for, a volunteer might be able to help you in my server. */
 
 .theme-dark {
-	--spacing: 12px;
 	/* radius of round corners */
 	--roundness: 16px;
 
@@ -72,6 +59,7 @@
 }
 
 :root {
+  --roundness: 16px;
   --themeColor1: #f2116b; /* Theme's color 1 */
   --themeColor2: #b31051; /* Theme's color 2 */
 
@@ -102,6 +90,16 @@
   --dplus-font-ui: 'Poppins';
   --dplus-font-body: 'Roboto';
   --dplus-font-header: 'Righteous';
+
+  --wallpaper-is: none; /* Wallpaper - Replace de url only */
+  --blur-size: 24px; /* Amount of blur in pixels [24px is default] */
+  --opacity-thing: 0.6; /* Value from 0 to 1 [0.6 is default] */
+  --server-size: 48px; /* The size of the server icons [48px is default] */
+    
+  /* HSL(Hue, Saturation, Lightness). This values will change the accent color (That blue color in most buttons) */
+  --H: 199; /* Value only number [199 is default] */
+  --S: 100%; /* Value in % [100% is default] */
+  --L: 69%; /* Value in % [69% is default] */
 
 /* Round corner sizes, measured in pixel radius.
 Set avatar/server radius to 50% to make them circular.
