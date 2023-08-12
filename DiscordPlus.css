@@ -1,0 +1,132 @@
+/**
+ * @name Discord+
+ * @author PlusInsta & Ztrolix
+ * @authorId 309931975102300160
+ * @authorLink https://plusinsta.xyz
+ * @version 3.2.1
+ * @description A sleek, customizable Discord theme.
+ * @donate https://ko-fi.com/plusinsta
+ * @website https://plusinsta.github.io/discord-plus
+ * @source https://github.com/PlusInsta/discord-plus
+ * @updateUrl https://plusinsta.github.io/discord-plus/DiscordPlus.theme.css
+ * @invite 2Jwh2nS
+*/
+@import url("https://plusinsta.github.io/discord-plus/src/DiscordPlus-source.theme.css");
+@import url("https://xcruxiex.github.io/themes/themes-cores/neutron8.css");
+@import url("https://xcruxiex.github.io/themes/core/badges.css");
+@import url("https://xcruxiex.github.io/themes/core/custom-font.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://github.com/Ztrolix/DiscordPlus/raw/main/midnight.css');
+
+/* I've commented most of these values so you can change them yourself. If you're having trouble, or you want to do more than what these values allow for, a volunteer might be able to help you in my server. */
+
+.theme-dark {
+	--spacing: 12px;
+	/* radius of round corners */
+	--roundness: 16px;
+
+  --themeColor1: #f2116b; /* Theme's color 1 */
+  --themeColor2: #b31051; /* Theme's color 2 */
+
+  /* CUSTOM FONT */
+  --customFont: 'Open sans', sans-serif; /* Custom font, change the name in 'font name here', you must import the font first */
+
+  /* HOME BUTTON */
+  --homeImage: url('https://imgur.com/eItxuAq.png');/* Home button image, must be a direct link | You can also set it to a gradient, google "css gradient"*/
+  --homeImageSize: cover;/* To cover the button, set to "cover". You can also set it to "100% 100%" but the image will be stretched. Set to "contain" to see the entire image */
+
+  /* BACKGROUND */
+  --backgroundColor: #0d0d0d; /* Background color */
+  --backgroundImage: url('https://imgur.com/qhBghXt.png'); /* Backround image, must be a direct link | You can also set it to a gradient, google "css gradient"*/
+  --backgroundPosition: center; /* Image position | center, left, right, bottom, top */
+  --backgroundSize: cover; /* To cover the entire app, set to "cover". You can also set it to "100% 100%" but the image will be stretched. Set to "contain" to see the entire image */
+  --backgroundRepeat: no-repeat; /* if you want the image to repeat | Google "css background repeat" */
+  --backgroundBlur: 100px; /* Set to 0 to remove blur | Set to 10px for average blur */
+  --backgroundOpacity: .65; /* 0 is transparent */
+
+  /* CODE BLOCKS */
+  --backgroundCode: rgba(0,0,0,.5);
+  --backgroundName: rgba(0,0,0,.5);
+/* Backdrop image which is shown behind the app. Can also be an HTML color. Falls back to accent color if invalid.
+   To use an image from your computer, upload it somewhere first, copy its link, then paste it below. */
+  --dplus-backdrop: url(https://i.imgur.com/3AiL3yN.png);
+
+/* Accent color, used to decorate the UI with colors. */
+  --dplus-accent-color-hue: 320;
+  --dplus-accent-color-saturation: 60%;
+  --dplus-accent-color-lightness: 31%;
+
+/* Foreground color: For things like text and icons. */
+  --dplus-foreground-color-hue-base: 210;
+  --dplus-foreground-color-hue-links: 197;
+  --dplus-foreground-color-saturation-amount: 1;
+  --dplus-foreground-color-lightness-amount: 1;
+
+/* Background color: Covers the backdrop so the app is easier to read. */
+  --dplus-background-color-hue: 320;
+  --dplus-background-color-saturation-amount: 1;
+  --dplus-background-color-lightness-amount: 1;
+  --dplus-background-color-alpha: 0.8;
+}
+
+:root {
+  --themeColor1: #f2116b; /* Theme's color 1 */
+  --themeColor2: #b31051; /* Theme's color 2 */
+
+  /* CUSTOM FONT */
+  --customFont: 'Open sans', sans-serif; /* Custom font, change the name in 'font name here', you must import the font first */
+
+  /* HOME BUTTON */
+  --homeImage: url('https://imgur.com/eItxuAq.png');/* Home button image, must be a direct link | You can also set it to a gradient, google "css gradient"*/
+  --homeImageSize: cover;/* To cover the button, set to "cover". You can also set it to "100% 100%" but the image will be stretched. Set to "contain" to see the entire image */
+
+  /* BACKGROUND */
+  --backgroundColor: #0d0d0d; /* Background color */
+  --backgroundImage: url('https://imgur.com/qhBghXt.png'); /* Backround image, must be a direct link | You can also set it to a gradient, google "css gradient"*/
+  --backgroundPosition: center; /* Image position | center, left, right, bottom, top */
+  --backgroundSize: cover; /* To cover the entire app, set to "cover". You can also set it to "100% 100%" but the image will be stretched. Set to "contain" to see the entire image */
+  --backgroundRepeat: no-repeat; /* if you want the image to repeat | Google "css background repeat" */
+  --backgroundBlur: 100px; /* Set to 0 to remove blur | Set to 10px for average blur */
+  --backgroundOpacity: .65; /* 0 is transparent */
+
+  /* CODE BLOCKS */
+  --backgroundCode: rgba(0,0,0,.5);
+  --backgroundName: rgba(0,0,0,.5);
+
+  --themeColor1: #f2116b; /* Theme's color 1 */
+  --themeColor2: #b31051; /* Theme's color 2 */
+/* Fonts */
+/* You can use any installed font on your device. */
+  --dplus-font-ui: 'Poppins';
+  --dplus-font-body: 'Roboto';
+  --dplus-font-header: 'Righteous';
+
+/* Round corner sizes, measured in pixel radius.
+Set avatar/server radius to 50% to make them circular.
+   UI radius must be in pixels, otherwise things break. */
+  --dplus-radius-ui: 10px;
+  --dplus-radius-avatar: 20%;
+  --dplus-radius-server: 20%;
+
+/* This decides how much breathing room there should be between things like buttons and content. */
+  --dplus-spacing-ui: 10px;
+
+/* This sets how much space there should be between the app contents and the edges of the window. It also affects the distance between major UI elements, such as the server list to the channel list and channel list to the chat. */
+   --dplus-spacing-app: 10px;
+
+/* Size of user and server icons */
+--dplus-icon-avatar-chat: 64px;
+--dplus-icon-avatar-list: 32px;
+--dplus-icon-avatar-profile: 80px;
+
+--HSL-server-icon-size: 40px;  /* Size of the server icons | DEFAULT: 40px */
+--HSL-server-spacing: 10px;  /* Spacing between each server icon | DEFAULT: 10px */
+--HSL-server-direction: column; /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
+
+--dplus-icon-server-sidebar: 48px;
+--dplus-icon-server-list: 32px;
+
+/* The Home icon on the top left */
+--dplus-icon-home-dark: url(https://plusinsta.github.io/discord-plus/assets/discord/home_dark.svg);
+--dplus-icon-home-light: url(https://plusinsta.github.io/discord-plus/assets/discord/home_light.svg);
+}
